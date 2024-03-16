@@ -1,0 +1,18 @@
+名称： Docker镜像CI
+
+在：
+  推：
+    分支：[    “主要”    ]
+  拉请求：
+    分支：[    “主要”    ]
+
+工作：
+
+  建造者：
+
+    运行: ubuntu-最新
+
+    脚步：
+    -使用： actions/checkout@v3
+    -名称：构建Docker镜像
+      运行： docker 构建。--file Dockerfile --tag my-image-name  :$(日期 +%s)
